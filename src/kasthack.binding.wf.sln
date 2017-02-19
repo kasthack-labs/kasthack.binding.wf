@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26206.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kasthack.binding.wf.40", "40\kasthack.binding.wf.40.csproj", "{43EE1F09-93E6-4468-A0DA-D9E252427AA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kasthack.binding.wf.45", "45\kasthack.binding.wf.45.csproj", "{7EC80E47-EC3A-4B54-A20D-DACFA25837D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kasthack.binding.wf.46", "46\kasthack.binding.wf.46.csproj", "{5A20CB70-6A78-4199-9DCF-2A4CEB01FBEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kasthack.binding.wf.451", "451\kasthack.binding.wf.451.csproj", "{FC4202CA-53AA-40A6-A6E0-D8F25921CEE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kasthack.binding.wf.452", "452\kasthack.binding.wf.452.csproj", "{1CF67C7E-506D-4479-A266-09DCEA2684DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kasthack.binding.wf.461", "461\kasthack.binding.wf.461.csproj", "{8B1BECAA-3D58-4E3C-82BE-1ADBBD8EA371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kasthack.binding.wf.462", "462\kasthack.binding.wf.462.csproj", "{9A56D70B-9D1A-44D3-B92D-5FC65281886D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43EE1F09-93E6-4468-A0DA-D9E252427AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43EE1F09-93E6-4468-A0DA-D9E252427AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EC80E47-EC3A-4B54-A20D-DACFA25837D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EC80E47-EC3A-4B54-A20D-DACFA25837D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A20CB70-6A78-4199-9DCF-2A4CEB01FBEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A20CB70-6A78-4199-9DCF-2A4CEB01FBEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC4202CA-53AA-40A6-A6E0-D8F25921CEE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC4202CA-53AA-40A6-A6E0-D8F25921CEE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CF67C7E-506D-4479-A266-09DCEA2684DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF67C7E-506D-4479-A266-09DCEA2684DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B1BECAA-3D58-4E3C-82BE-1ADBBD8EA371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B1BECAA-3D58-4E3C-82BE-1ADBBD8EA371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A56D70B-9D1A-44D3-B92D-5FC65281886D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A56D70B-9D1A-44D3-B92D-5FC65281886D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
