@@ -3,13 +3,25 @@ using System.Linq.Expressions;
 using System.Windows.Forms;
 
 namespace  kasthack.binding.wf {
+    /// <summary>
+    /// Lambda binding helper
+    /// </summary>
     public static class LambaBinder
     {
         /// <summary>
         /// Bind Control property to object property. Usage: control.Bind(a=>a.ControlProperty, model, a=>a.ModelProperty.ModelSubProperty)
         /// </summary>
-        /// <param name="formattingEnabled">enable value formatting</param>
-        /// <param name="updateMode">Bindproperty update mode</param>
+        /// <typeparam name="TControl">Control type(don't specify manually)</typeparam>
+        /// <typeparam name="TProperty">Control target property type (don't specify manually)</typeparam>
+        /// <typeparam name="TModel">Model type (don't specify manually)</typeparam>
+        /// <typeparam name="TBind">Model property type  (don't specify manually)</typeparam>
+        /// <param name="control">Control to apply the binding to</param>
+        /// <param name="property">Control property expression</param>
+        /// <param name="model">Binding model object</param>
+        /// <param name="bind">Binding propery expression</param>
+        /// <param name="formattingEnabled">Enable formatting</param>
+        /// <param name="updateMode">Update mode</param>
+        /// <returns></returns>
         public static Binding Bind<TControl, TProperty, TModel, TBind>(this TControl control, Expression<Func<TControl, TProperty>> property, TModel model, Expression<Func<TModel, TBind>> bind, bool formattingEnabled = false, DataSourceUpdateMode updateMode = DataSourceUpdateMode.OnPropertyChanged)
             where TControl : IBindableComponent
             => BindInternal(control, property, model, bind, formattingEnabled, updateMode);
@@ -44,7 +56,7 @@ namespace  kasthack.binding.wf {
         private static void CheckPropertyLambda(LambdaExpression expression, string cn)
         {
             if (expression == null || expression.NodeType != ExpressionType.Lambda || !IsValidMemberLambda(expression.Body))
-                throw new ArgumentException("Control expression must be a property lambda", cn);
+                throw new ArgumentException("Expression must be a property lambda", cn);
         }
 
         private static bool IsValidMemberLambda(Expression expression, bool hasChildren = false)

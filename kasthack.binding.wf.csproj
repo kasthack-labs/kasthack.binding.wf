@@ -1,7 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
-		<TargetFrameworks>net40;net45;net451;net452;net46;net461;net462;net47</TargetFrameworks>
+		<PublishReferencesDocumentationFiles>true</PublishReferencesDocumentationFiles>
+		<PublishDocumentationFile>true</PublishDocumentationFile>
+		<PublishDocumentationFiles>true</PublishDocumentationFiles>
+		<TargetFrameworks>net35;net40;net45;net451;net452;net46;net461;net462;net47</TargetFrameworks>
 		<PackageId>kasthack.binding.wf</PackageId>
 		<PackageVersion>1.1.1</PackageVersion>
 		<PackageDescription>Windows.Forms data binding lambda helper. Gets rid of that literal / nameof bullshit in your code.</PackageDescription>
@@ -9,8 +12,10 @@
 		<PackageTags>kasthack databinding lambda winforms binding windows forms</PackageTags>
 		<PackageLicenseUrl>https://github.com/kasthack/kasthack.binding.wf/blob/master/LICENSE.txt</PackageLicenseUrl>
 		<PackageProjectUrl>http://github.com/kasthack/kasthack.binding.wf</PackageProjectUrl>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	</PropertyGroup>
+	
 	<ItemGroup>
-		<Reference Include="System.Windows.Forms"/>
+		<Reference Include="System.Windows.Forms" />
 	</ItemGroup>
 </Project>
