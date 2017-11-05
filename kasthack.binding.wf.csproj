@@ -6,15 +6,16 @@
 		<PublishDocumentationFiles>true</PublishDocumentationFiles>
 		<TargetFrameworks>net35;net40;net45;net451;net452;net46;net461;net462;net47</TargetFrameworks>
 		<PackageId>kasthack.binding.wf</PackageId>
-		<PackageVersion>1.1.1</PackageVersion>
 		<PackageDescription>Windows.Forms data binding lambda helper. Gets rid of that literal / nameof bullshit in your code.</PackageDescription>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<PackageTags>kasthack databinding lambda winforms binding windows forms</PackageTags>
 		<PackageLicenseUrl>https://github.com/kasthack/kasthack.binding.wf/blob/master/LICENSE.txt</PackageLicenseUrl>
 		<PackageProjectUrl>http://github.com/kasthack/kasthack.binding.wf</PackageProjectUrl>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>1.2.1</Version>
+		<AssemblyVersion>1.2.1.0</AssemblyVersion>
 	</PropertyGroup>
-	
+
 	<ItemGroup>
 		<Reference Include="System.Windows.Forms" />
 	</ItemGroup>
